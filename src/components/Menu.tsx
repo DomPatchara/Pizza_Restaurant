@@ -27,6 +27,7 @@ const Menu = () => {
           width={20} 
           height={20}
           onClick={() => setOpen(true)}
+          className='cursor-pointer'
         />
       ) : (
         <Image 
@@ -35,6 +36,7 @@ const Menu = () => {
           width={20} 
           height={20}
           onClick={() => setOpen(false)}
+          className='cursor-pointer'
         />
       ) }
       
