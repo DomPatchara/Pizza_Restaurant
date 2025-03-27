@@ -19,6 +19,9 @@ const Price = ({price, id, options}: Props) => {
         setTotal((quantity * (options ? (price ?? 0) + options[selected].additionalPrice : (price ?? 0))))
     },[quantity, selected, options, price])
 
+
+
+
   return (
     <div className='flex flex-col gap-4'>
         <h2 className='text-2xl font-bold'>${total?.toFixed(2)}</h2>
@@ -52,7 +55,7 @@ const Price = ({price, id, options}: Props) => {
             </div>
             {/**Cart Button */}
             <button 
-                className='p-2 bg-red-500 text-white uppercase ring-1 ring-red-500'
+                className='p-2 bg-red-500 text-white uppercase ring-1 ring-red-500 hover:bg-red-600 cursor-pointer'
             >
                 Add to Cart
             </button>
