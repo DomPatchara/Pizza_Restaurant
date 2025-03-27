@@ -19,7 +19,7 @@ const SingleProductPage = ({params} : ProductProps) => {
   //4./   slug = slug: ["burgers", "1"]
   //5./   ไม่ต้องใช้ params.slug แล้ว ใช้แค่ slug ได้เลย 
 
-  const [category, productId] = slug    //Ex  URL: localhost3000/product/pizzas/2 ---------> slug = [ "pizzas", "2" ] 
+  const [category, productId] = slug    // Ex  URL: localhost3000/product/pizzas/2 ---------> slug = [ "pizzas", "2" ] 
 
   const ProductIdNumber = Number(productId); // Change Id to Numbertype
 
