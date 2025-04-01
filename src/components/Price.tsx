@@ -48,9 +48,9 @@ const Price = ({price, id, options}: Props) => {
             <div className='flex-1 flex items-center justify-between p-2 ring-1 ring-red-500'>
                 <span>Quantity</span>
                 <div className='space-x-1.5'>
-                    <button onClick={()=>setQuantity(prev => (prev > 1 ? prev - 1 : 1))}>{'<'}</button>
+                    <button className='cursor-pointer' onClick={()=>setQuantity(prev => (prev > 1 ? prev - 1 : 1))}>{'<'}</button>
                     <span>{quantity}</span>
-                    <button onClick={()=> setQuantity(prev =>(prev < 9 ? prev + 1 : 9))}>{'>'}</button>
+                    <button className='cursor-pointer' onClick={()=> setQuantity(prev =>(prev < 9 ? prev + 1 : 9))}>{'>'}</button>
                 </div>
             </div>
             {/**Cart Button */}
