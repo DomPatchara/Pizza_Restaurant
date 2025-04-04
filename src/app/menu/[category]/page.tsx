@@ -1,3 +1,5 @@
+import { GetServerSideProps } from 'next'
+
 import { menuData } from '@/data'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -52,5 +54,15 @@ const CategoryPage = ({ params }: CategoryProps) => {
     
   )
 }
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const { category } = context.params as { category: string };
+
+  return {
+    props: {
+      category,
+    }
+  }
+};
 
 export default CategoryPage
