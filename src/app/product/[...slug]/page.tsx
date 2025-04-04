@@ -7,11 +7,11 @@ import Price from "@/components/Price";
 interface ProductProps {
   params : { slug : string[] };
 }
-const SingleProductPage = ({params} : ProductProps) => {
+const SingleProductPage = async ({params} : ProductProps) => {
 
 // **  Object destructuring **//
 
-  const { slug } = params;      
+  const { slug } = await params;      
   
   //1./   params = { slug: ["burgers", "1"] }
   //2./   { slug } = params
