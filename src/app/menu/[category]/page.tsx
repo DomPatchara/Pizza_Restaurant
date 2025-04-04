@@ -3,11 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 interface CategoryProps {
-  params: { category: string };
+  params : Promise<{category: string }>;
 }
 
 const CategoryPage = async ({ params }: CategoryProps) => {
-  const { category } = await params;
+  const { category } =  await params;
   const products = menuData[category];
 
   if (!products) {

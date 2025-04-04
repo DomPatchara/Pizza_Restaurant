@@ -5,7 +5,7 @@ import Price from "@/components/Price";
 
 
 interface ProductProps {
-  params : { slug : string[] };
+  params : Promise<{ slug : string[] }>;
 }
 const SingleProductPage = async ({params} : ProductProps) => {
 
