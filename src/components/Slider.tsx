@@ -31,7 +31,7 @@ const Slider = () => {
             (prev) => (prev === data.length - 1 ? 0 : prev + 1)),  // เปลี่ยน text + image ทุกๆ 2 วิ
         2000);
         return () => clearInterval(interval); // when component unmout (navigate ไปหน้าอื่น) ให้ clear fuction เพราะเปลือง memory
-    },[data.length])
+    },[])
     
   return (
     <div className='flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-8rem)] md:flex-row'>

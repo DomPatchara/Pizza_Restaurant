@@ -52,7 +52,7 @@ const LoginPage = () => {
 
       {
         currentState === 'Login'
-        ? <p className='text-gray-400'>Don't have an account ? <span  onClick={()=>setCurrentState('Sign Up')} className='text-blue-600 cursor-pointer'>Sign up</span></p>
+        ? <p className='text-gray-400'>Don&apos;t have an account ? <span  onClick={()=>setCurrentState('Sign Up')} className='text-blue-600 cursor-pointer'>Sign up</span></p>
         : <p className='text-gray-400'>Already have an account ? <span onClick={()=>setCurrentState('Login')} className='text-blue-600 cursor-pointer'>Login</span></p>
       }
            

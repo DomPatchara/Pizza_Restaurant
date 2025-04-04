@@ -1,11 +1,9 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 import CartIcon from "./CartIcon";
-import { twMerge } from "tailwind-merge";
 
 const links = [
   { id: 1, title: "Homepage", url: "/" },
