@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 interface CategoryProps { 
-  params : { category : string }
+  params : { category : string; }
 }
 
 const CategoryPage = ({ params }: CategoryProps) => {
