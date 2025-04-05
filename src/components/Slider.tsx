@@ -37,7 +37,7 @@ const Slider = () => {
     <div className='flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-8rem)] md:flex-row'>
         {/**Text Container */}
         <div className='h-1/2 md:w-1/2 md:h-full flex justify-center items-center flex-col'>
-            <h1 className='text-5xl text-center uppercase p-4 md:text-5xl xl:text-7xl mb-1 font-bold text-red-500'>
+            <h1 className='text-4xl text-center uppercase p-4 md:text-5xl xl:text-7xl mb-1 font-bold text-red-500'>
                 {data[currentSlide].title}
             </h1>
             <Link href="/menu">
@@ -49,7 +49,7 @@ const Slider = () => {
 
         {/**Image Container */}
         <div className='h-1/2 w-full relative md:w-1/2 md:h-full'>
-            <Image src={data[currentSlide].image} alt='' fill className='object-cover'/>
+            <Image src={data[currentSlide].image} alt='' fill priority className='object-cover'/>
         </div>
     </div>
   )

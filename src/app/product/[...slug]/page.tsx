@@ -30,7 +30,7 @@ const SingleProductPage = async ({params} : ProductProps) => {
   const product = CategoryData.find(p => p.id === ProductIdNumber)
 
   return (
-    <div className="p-4 lg:px-20 xl:px-40 h-screen flex flex-col justify-around text-red-500 md:flex-row md:gap-8 md:items-center">
+    <div className="p-4 lg:px-20 xl:px-40 h-screen flex flex-col justify-around text-red-500 md:flex-row md:gap-8 md:items-center mb-10">
       {/* IMAGE CONTAINER */}
       {product?.img && (
         <div className="relative w-full h-1/2 md:h-[70%]">
