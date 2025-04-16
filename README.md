@@ -20,6 +20,9 @@
 - TailwindCSS
 - React
 - TypeScript
+- 
+## 🎯 Live Demo
+https://dome-project-pizza.netlify.app/
 
 ## 📷 Screen Shot
 ![image](https://github.com/user-attachments/assets/720df728-9e53-4394-bf72-03669689b657)
