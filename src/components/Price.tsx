@@ -11,7 +11,7 @@ type Props = {
   price: number | undefined;
   id: number | undefined;
   options: { title: string; additionalPrice: number }[];
-  img: string;
+  img: string | undefined;
 };
 
 const Price = ({ ProductName, img, price, options }: Props) => {
