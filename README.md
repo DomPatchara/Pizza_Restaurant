@@ -18,9 +18,9 @@
 ## 🛠 Tech Stack
 - Next.JS
 - TailwindCSS
-- React
+- Redux Toolkit
 - TypeScript
-- 
+
 ## 🎯 Live Demo
 https://dome-project-pizza.netlify.app/
 
