@@ -11,5 +11,5 @@ export interface Product {
     size: string;
     total_qty: number;
     total_price: number;
-    img: any
+    img: string
   }
