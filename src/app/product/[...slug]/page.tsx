@@ -12,12 +12,6 @@ const SingleProductPage = async ({params} : ProductProps) => {
 // **  Object destructuring **//
 
   const { slug } = await params;      
-  
-  //1./   params = { slug: ["burgers", "1"] }
-  //2./   { slug } = params
-  //3./   { slug } = { slug: ["burgers", "1"] } 
-  //4./   slug = slug: ["burgers", "1"]
-  //5./   ไม่ต้องใช้ params.slug แล้ว ใช้แค่ slug ได้เลย 
 
   const [category, productId] = slug    // Ex  URL: localhost3000/product/pizzas/2 ---------> slug = [ "pizzas", "2" ] 
 
@@ -47,9 +41,11 @@ const SingleProductPage = async ({params} : ProductProps) => {
         <h1 className="text-3xl font-bold uppercase xl:text-5xl">{product?.title}</h1>
         <p>{product?.desc}</p>
         <Price 
+          ProductName={product?.title}
           price={product?.price} 
           id={product?.id} 
-          options={product?.options}
+          options={product?.options ?? []}
+          img = {product?.img}
         />
       </div>
     </div>
