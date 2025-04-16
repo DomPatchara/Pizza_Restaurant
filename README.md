@@ -1,13 +1,13 @@
 # 🍕 Pizza Restaurant UI With Next.JS
  This is my simple Pizza Restaurant UI Website with Responsive created by Next.JS
- and I'm Focus on basic that I learned is Dinamic route and Catch all Route
+ and I'm Focus on basic that I learned is Dinamic route and Catch all Route and Redux Toolkit for global state. 
 
 ## ✨ Features
  - Fully Responsive layout
  - Dinamic Route & Catch all Route
  - Home Page with navigation to menu categories and products
  - Menu Page with links to each category and product details
- - Cart Page UI
+ - Cart Page ( use Redux ToolKit )
  - Login Page UI
 
 ## 🔑 Key Learning
